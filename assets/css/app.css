@@ -916,7 +916,8 @@ p {
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #b3a500; }
+    background-color: #222;
+    border-color: #ffffff; }
   .btn--secondary {
     background-color: #7c9091;
     border-color: #7c9091; }
@@ -1619,5 +1620,15 @@ textarea {
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
   right: 0; }
+
+/* Ripple Out */
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvYXBwLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

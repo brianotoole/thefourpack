@@ -26,7 +26,8 @@
     &:focus {
         text-decoration: none;
         color: $color-white;
-        background-color: $color-primary-dark;
+        background-color: $color-body;
+        border-color: $color-white;
     }
     &--secondary {
         background-color: $color-secondary;
