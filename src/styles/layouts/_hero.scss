@@ -8,7 +8,10 @@
 
 .hero__logo {
     padding-top: rem(30);
-    padding-bottom: rem(100);
+    padding-bottom: rem(60);
+    @include bp_md {
+        padding-bottom: rem(100);
+    }
 }
 
 .hero__title {

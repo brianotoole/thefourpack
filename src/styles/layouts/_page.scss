@@ -51,6 +51,10 @@
 }
 
 .section--pad-xl {
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include bp_md {
+        padding-top: rem(120);
+        padding-bottom: rem(120);
+    }
 }

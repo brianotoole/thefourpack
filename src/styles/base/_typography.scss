@@ -78,7 +78,10 @@ p {
 .heading-underline {
     @extend h5;
     font-weight: 700;
-    margin-bottom: rem(40);
+    margin-bottom: rem(20);
     padding-bottom: rem(20);
     border-bottom: 1px solid $color-grey;
+    @include bp_md {
+        margin-bottom: rem(40);
+    }
 }
