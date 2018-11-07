@@ -892,7 +892,7 @@ p {
 *********************************************************/
 .btn {
   display: inline-block;
-  padding: 0 3.75rem;
+  padding: 0 1.875rem;
   height: 3.875rem;
   line-height: 3.875rem;
   font-size: 1rem;
@@ -907,6 +907,9 @@ p {
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.2s linear; }
+  @media (min-width: 800px) {
+    .btn {
+      padding: 0 3.75rem; } }
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
@@ -923,9 +926,9 @@ p {
     .btn--muted:hover, .btn--muted:focus {
       background-color: #ffeb00;
       border-color: #b3a500; }
-  .btn--large {
-    padding: 0.9375rem 1.5625rem;
-    font-size: 1.125rem; }
+  .btn--small {
+    height: 3.25rem;
+    line-height: 3.25rem; }
   .btn--disabled {
     opacity: 0.8;
     cursor: not-allowed; }
@@ -1387,18 +1390,20 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff; }
+  .modal__description {
+    padding-top: 0.9375rem; }
   .modal__close {
     position: absolute;
     top: 30px;
     right: 30px;
     font-size: 1.75rem;
-    color: #ffffff;
+    color: #ffeb00;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #e6e6e6; }
+      color: #ccbc00; }
 
 @keyframes fadeIn {
   from {

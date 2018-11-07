@@ -4,7 +4,7 @@
 
 .btn {
     display: inline-block;
-    padding: 0 rem(60);
+    padding: 0 rem(30);
     height: rem(62);
     line-height: rem(62);
     font-size: font-scale(0);
@@ -19,6 +19,9 @@
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.2s linear;
+    @include bp_md() {
+        padding: 0 rem(60);
+    }
     &:hover,
     &:focus {
         text-decoration: none;
@@ -43,9 +46,9 @@
             border-color: $color-primary-dark;
         }
     }
-    &--large {
-        padding: rem(15) rem(25);
-        font-size: rem(18);
+    &--small {
+        height: rem(52);
+        line-height: rem(52);
     }
     &--disabled {
         opacity: 0.8;
