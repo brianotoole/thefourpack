@@ -1,0 +1,26 @@
+---
+layout: page
+title: News
+bgcolorclass: bg-white
+hero: Sharing what we've learned along the way
+subtitle: 
+bodyclass: page-news
+---
+<section class="news-layout section-wrap bg-grey">
+  <div class="container">
+    <h4 class="section-title section-title--underline">Recent News</h4>
+    <div class="posts-wrapper">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}">
+        <article class="post-item hvr-underline-from-left">
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <!-- <p class="post-cat">- {{ post.category }} -</p> -->
+          <a class="btn arrow" href="{{ post.url }}">View Article</a>
+        </article>
+      </a>
+      {% endfor %}
+    </div>
+    <!--/.posts-wrapper-->
+  </div>
+  <!--/.container-->
+</section>

@@ -1,0 +1,23 @@
+<div id="more">
+        {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' %}
+        {% for project in project_items limit:2 %}
+  
+          <a href="{{ project.url }}">
+          <div class="project-block">
+            <div class="half left">
+              <h4 class="">{{ project.title }}</h4>
+              <p>{{ project.description }}</p>
+              <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
+            </div><!--/.half-->
+            <div class="half right">
+              <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
+            </div><!--/.half -->
+          </div><!--<!--/.project-block-->
+          </a>
+  
+        {% endfor %}
+        <div class="project-more-wrapper row end-xs">
+          <a class="btn transparent block-mobile" href="{{ project.url }}/work">View More Projects</a>
+        </div><!--<!--/.project-more-wrapper-->
+        
+      </div>

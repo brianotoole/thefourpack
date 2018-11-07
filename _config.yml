@@ -1,0 +1,36 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: The Four Pack
+email: #
+description: > # this means to ignore newlines until "baseurl:"
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thefourpack.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Build settings
+gems:
+  #- octopress-minify-html
+
+minify_html: false
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+  plans:
+    output: true
+    permalink: /:collection/:name
+
+exclude:
+  - node_modules
