@@ -18,7 +18,7 @@ function slideInHeroItems() {
         tl.add(
             TweenMax.from($(this), 0.3, {
                 autoAlpha: 0,
-                x: 2,
+                y: 0,
                 ease: Power0.easeOut
             })
         );
@@ -28,9 +28,9 @@ function slideInHeroItems() {
 function slideUpIntroItems() {
     introItems.each(function() {
         tl.add(
-            TweenMax.from($(this), 0.3, {
+            TweenMax.from($(this), 0.25, {
                 autoAlpha: 0,
-                x: 2,
+                y: 20,
                 ease: Power0.easeOut
             })
         );
@@ -47,7 +47,7 @@ function staggerInServices() {
         .setTween(tl1)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl1.staggerFrom(".service__item", 0.3, { y: 2, autoAlpha: 0, ease: Power0.easeOut }, 0.3);
+    return tl1.staggerFrom(".service__item", 0.25, { x: -20, autoAlpha: 0, ease: Power1.easeOut }, 0.3);
 }
 
 function slideUpFooter() {
@@ -60,7 +60,7 @@ function slideUpFooter() {
         .setTween(tl2)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl2.staggerFrom(".btn-contact", 0.3, { x: 2, autoAlpha: 0, ease: Power0.easeOut }, 0.3);
+    return tl2.from(".btn-contact", 0.3, { x: 2, autoAlpha: 0, ease: Power0.easeOut }, 0.3);
 }
 
 
