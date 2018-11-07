@@ -10,6 +10,11 @@ $wrapper-padding: 1rem;
     flex: 0 1 auto;
     margin-left: -($wrapper-padding / 2);
     margin-right: -($wrapper-padding / 2);
+    @include bp_md {
+        +.row-flex {
+            margin-top: rem(50);
+        }
+    }
     >div {
         //default grid has padding applied 
         position: relative;

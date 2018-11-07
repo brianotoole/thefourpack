@@ -3,12 +3,10 @@
 *********************************************************/
 
 .site-wrapper {
-    border: 10px solid $color-primary;
-    margin: 0 auto;
-    text-align: center;
+    border: 12px solid $color-primary;
 }
 
-.container {
+.wrapper {
     max-width: 1230px;
     margin-left: auto;
     margin-right: auto;
@@ -23,6 +21,9 @@
 .section {
     padding-top: rem(30);
     padding-bottom: rem(30);
+    &--underline {
+        border-bottom: 2px solid $color-grey;
+    }
     &--primary {
         color: white;
         background-color: $color-primary;
@@ -39,6 +40,9 @@
         color: white;
         background-color: black;
     }
+    &--grey {
+        background-color: $color-grey;
+    }
 }
 
 .section--pad-lg {
@@ -47,6 +51,6 @@
 }
 
 .section--pad-xl {
-    padding-top: rem(90);
-    padding-bottom: rem(90);
+    padding-top: rem(120);
+    padding-bottom: rem(120);
 }

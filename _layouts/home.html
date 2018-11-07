@@ -5,15 +5,15 @@ bodyclass: page-interior
 
 
 <section class="section-hero {{ page.bgcolorclass }}">
-  <div class="container">
-    <div class="row">
-      <div class="hero">
-        <div class="hero__logo">logo</div>
-        <h1 class="hero__title">{{ page.hero-title }}</h1>
-        <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
-      </div><!--/.hero-->
-    </div><!--/.row-->
-  </div><!--/.container-->
+    <div class="wrapper">
+        <div class="row-flex">
+            <div class="hero row-flex__col-md-12">
+                <div class="hero__logo">logo</div>
+                <h1 class="hero__title heading">{{ page.hero-title }}</h1>
+                <h2 class="hero__subtitle heading">{{ page.hero-subtitle }}</h2>
+            </div>
+        </div>
+    </div>
 </section>
 
 {{ content }}

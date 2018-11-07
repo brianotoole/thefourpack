@@ -7,11 +7,16 @@
 }
 
 .hero__logo {
-    width: 200px;
-    height: auto;
+    padding-top: rem(30);
     padding-bottom: rem(100);
 }
 
-.hero__title {}
+.hero__title {
+    padding-bottom: rem(50);
+    font-weight: 700;
+}
 
-.hero__subtitle {}
+.hero__subtitle {
+    @extend .h4;
+    font-style: italic;
+}
