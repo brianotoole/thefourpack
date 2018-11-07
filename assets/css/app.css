@@ -883,7 +883,9 @@ p {
 
 .heading-underline {
   font-weight: 700;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #ddd; }
 
 /*********************************************************
     Buttons
@@ -945,24 +947,24 @@ p {
       flex-wrap: wrap;
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem; }
+  margin-left: -0.3125rem;
+  margin-right: -0.3125rem; }
   @media (min-width: 800px) {
     .row-flex + .row-flex {
       margin-top: 3.125rem; } }
   .row-flex > div {
     position: relative;
-    padding: 0 1rem;
+    padding: 0 0.625rem;
     width: 100%; }
   .row-flex--no-gutters {
     margin: 0; }
     .row-flex--no-gutters > div {
       padding: 0; }
   .row-flex--lg-gutters {
-    margin-left: -2rem;
-    margin-right: -2rem; }
+    margin-left: -1.25rem;
+    margin-right: -1.25rem; }
     .row-flex--lg-gutters > div {
-      padding: 0 2rem; }
+      padding: 0 1.25rem; }
   .row-flex--reverse {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; }
@@ -1316,7 +1318,8 @@ textarea {
     border-color: #ffeb00; }
 
 textarea {
-  max-width: 100%; }
+  max-width: 100%;
+  height: 125px; }
 
 @media (min-width: 800px) {
   .form__btn-container {
@@ -1363,7 +1366,7 @@ textarea {
 .modal {
   position: fixed;
   z-index: 50;
-  background-color: rgba(255, 235, 0, 0.97);
+  background-color: rgba(34, 34, 34, 0.98);
   top: 0;
   bottom: 0;
   left: 0;

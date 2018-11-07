@@ -2,7 +2,7 @@
     Flexbox Grid
 *********************************************************/
 
-$wrapper-padding: 1rem;
+$wrapper-padding: rem(10);
 .row-flex {
     display: flex;
     flex-direction: row;
