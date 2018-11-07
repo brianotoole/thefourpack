@@ -1,101 +1,41 @@
-// TYPOGRAPY
-body {
-  font-family: $font-body;
-  line-height: 1.45;
-  font-weight: 300;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-}
+/*********************************************************
+    Typography
+*********************************************************/
+
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
 h4,
-.h4,
 h5,
-.h5,
-h6,
-.h6 {
-  font-family: $font-heading;
-  font-weight: 400;
-  line-height: 1.4;
-  word-wrap: break-word;
-  letter-spacing: 0.25px;
+h6 {
+    font-weight: 300;
+    line-height: 1.2;
 }
 
-h1,
-.h1,
-h2,
-.h2 {
-  font-weight: 900;
+h1 {
+    font-size: font-scale(6);
 }
 
-h1,
-.h1 {
-  font-size: rem(52);
-  letter-spacing: 0.5px;
-  @media (max-width: $bp-md) {
-    font-size: rem(32);
-  }
+h2 {
+    font-size: font-scale(5);
 }
 
-h2,
-.h2 {
-  font-size: rem(42);
-  @media (max-width: $bp-md) {
-    font-size: rem(28);
-  }
+h3 {
+    font-size: font-scale(4);
 }
 
-h3,
-.h3 {
-  font-size: rem(36);
-  @media (max-width: $bp-md) {
-    font-size: rem(24);
-  }
+h4 {
+    font-size: font-scale(3);
 }
 
-h4,
-.h4 {
-  font-size: rem(28);
-  @media (max-width: $bp-md) {
-    font-size: rem(20);
-  }
+h5 {
+    font-size: font-scale(2);
 }
 
-h5,
-.h5 {
-  font-size: rem(22);
-  @media (max-width: $bp-md) {
-    font-size: rem(18);
-  }
-}
-
-h6,
-.h6 {
-  font-size: rem(18);
-  @media (max-width: $bp-md) {
-    font-size: rem(16);
-  }
+h6 {
+    font-size: font-scale(0);
 }
 
 p {
-  font-size: rem(16);
-}
-ul,
-ol,
-dl {
-  font-size: rem(16);
-}
-pre {
-  padding: 20px;
-  background: $color-body;
-}
-code {
-  background: $color-body;
-  color: $color-code;
-  font-size: rem(14);
-  padding: 2px;
+    margin: 0 0 rem(20) 0;
 }

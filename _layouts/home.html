@@ -1,22 +1,19 @@
+--- 
+layout: default 
+bodyclass: page-interior 
 ---
-layout: default
-bodyclass: page-interior
----
-<div class="page page-home">
+
 
 <section class="section-hero {{ page.bgcolorclass }}">
-  <div class="container hero-content">
-    <h1 class="hero-title">{{ page.hero }}</h1>
-    <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
-    <div class="hero-scroll">
-      <a href="#more"><span></span></a>
-    </div><!--/.hero-scroll-->
+  <div class="container">
+    <div class="row">
+      <div class="hero">
+        <div class="hero__logo">logo</div>
+        <h1 class="hero__title">{{ page.hero-title }}</h1>
+        <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
+      </div><!--/.hero-->
+    </div><!--/.row-->
   </div><!--/.container-->
 </section>
 
-<div class="interior-content" id="more">
-  {{ content }}
-</div>
-
-
-</div><!--/.page-interior-->
+{{ content }}
