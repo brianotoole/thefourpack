@@ -1356,6 +1356,9 @@ textarea {
 .text-error {
   color: red; }
 
+.text-success {
+  color: #303030; }
+
 .form-inline {
   display: inline-block;
   margin-bottom: 0;
