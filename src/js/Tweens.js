@@ -41,26 +41,26 @@ function staggerInServices() {
     var newsScene = new ScrollMagic.Scene({
             //scene options
             triggerElement: "#trigger-services",
-            triggerHook: 0.9,
+            triggerHook: 0.8,
             reverse: false
         })
         .setTween(tl1)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl1.staggerFrom(".service__item", 0.25, { y: 5, autoAlpha: 0, ease: Power1.easeOut }, 0.3);
+    return tl1.staggerFrom(".service__item", 0.15, { y: 5, autoAlpha: 0, ease: Power1.easeOut }, 0.15);
 }
 
 function slideUpFooter() {
     var newsScene = new ScrollMagic.Scene({
             //scene options
             triggerElement: "#trigger-contact",
-            triggerHook: 0.9,
+            triggerHook: 0.8,
             reverse: false
         })
         .setTween(tl2)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl2.from(".btn-contact", 0.3, { y: 5, autoAlpha: 0, ease: Power0.easeOut }, 0.3);
+    return tl2.from(".btn-contact", 0.15, { y: 5, autoAlpha: 0, ease: Power0.easeOut }, 0.15);
 }
 
 
