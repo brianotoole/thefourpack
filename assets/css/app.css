@@ -1418,6 +1418,7 @@ textarea {
     position: absolute;
     top: 30px;
     right: 30px;
+    font-family: aktiv-grotesk, sans-serif;
     font-size: 1.75rem;
     color: #303030;
     transform: scaleX(1.2);

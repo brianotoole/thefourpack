@@ -60,7 +60,7 @@ function slideUpFooter() {
         .setTween(tl2)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl2.from(".btn-contact", 0.15, { y: 5, autoAlpha: 0, ease: Power0.easeOut }, 0.15);
+    return tl2.from(".btn-contact", 0.25, { y: 0, autoAlpha: 0, ease: Power0.easeOut }, 0.25);
 }
 
 
