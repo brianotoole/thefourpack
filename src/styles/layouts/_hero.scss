@@ -7,6 +7,8 @@
 }
 
 .hero__logo {
+    width: 100px;
+    margin: auto;
     padding-top: rem(30);
     padding-bottom: rem(60);
     @include bp_md {

@@ -5,7 +5,7 @@
 .modal {
     position: fixed;
     z-index: 50;
-    background-color: rgba($color-body, 0.98);
+    background-color: rgba($color-grey, 0.99);
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,13 +37,13 @@
         top: 30px;
         right: 30px;
         font-size: rem(28);
-        color: $color-primary;
+        color: $color-body;
         transform: scaleX(1.2);
         transform-origin: 100% 0;
         cursor: pointer;
         transition: all 0.3s ease-out;
         &:hover {
-            color: darken($color-primary, 10%);
+            color: darken($color-body, 10%);
         }
     }
 }
