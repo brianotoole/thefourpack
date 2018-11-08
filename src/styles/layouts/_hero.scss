@@ -7,9 +7,9 @@
 }
 
 .hero__logo {
-    width: 100px;
+    width: 90px;
     margin: auto;
-    padding-top: rem(30);
+    padding-top: rem(15);
     padding-bottom: rem(60);
     @include bp_md {
         padding-bottom: rem(100);
@@ -17,7 +17,7 @@
 }
 
 .hero__title {
-    padding-bottom: rem(50);
+    padding-bottom: rem(30);
     font-weight: 700;
 }
 

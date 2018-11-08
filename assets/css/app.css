@@ -785,7 +785,7 @@ html {
 body {
   background: #fff;
   color: #303030;
-  font-family: "Lato", sans-serif;
+  font-family: zenon, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5; }
@@ -812,6 +812,7 @@ h5,
 .heading-underline,
 h6,
 .heading {
+  font-family: zenon, sans-serif;
   font-weight: 300;
   line-height: 1.2; }
 
@@ -875,8 +876,9 @@ p {
       font-size: 1.2rem; } }
 
 .heading {
+  font-family: aktiv-grotesk, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 2.5rem; }
   .heading--m-bottom {
     padding-bottom: 3.75rem; }
@@ -898,6 +900,7 @@ p {
   padding: 0 1.875rem;
   height: 3.625rem;
   line-height: 3.625rem;
+  font-family: aktiv-grotesk, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1218,16 +1221,16 @@ p {
   position: relative; }
 
 .hero__logo {
-  width: 100px;
+  width: 90px;
   margin: auto;
-  padding-top: 1.875rem;
+  padding-top: 0.9375rem;
   padding-bottom: 3.75rem; }
   @media (min-width: 800px) {
     .hero__logo {
       padding-bottom: 6.25rem; } }
 
 .hero__title {
-  padding-bottom: 3.125rem;
+  padding-bottom: 1.875rem;
   font-weight: 700; }
 
 .hero__subtitle {
@@ -1510,10 +1513,10 @@ textarea {
     color: #303030; }
 
 .font-heading {
-  font-family: "Roboto", sans-serif; }
+  font-family: zenon, sans-serif; }
 
 .font-body {
-  font-family: "Lato", sans-serif; }
+  font-family: aktiv-grotesk, sans-serif; }
 
 .full-height {
   height: 100vh; }

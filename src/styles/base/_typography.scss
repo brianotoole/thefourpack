@@ -8,6 +8,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: $font-heading;
     font-weight: 300;
     line-height: 1.2;
 }
@@ -67,8 +68,9 @@ p {
 
 .heading {
     @extend h6;
+    font-family: $font-body;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: rem(40);
     &--m-bottom {
         padding-bottom: rem(60);
