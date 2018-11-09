@@ -82,17 +82,24 @@
 
 .pre-loader-logo-wrap {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 12px;
     left: 12px;
     width: calc(100% - 24px);
     height: calc(100% - 24px);
-    background: $color-grey;
     z-index: 3;
     &.active {
        display: block;
+       animation: bg_change 0.6s;
     }
 }
+@keyframes bg_change {
+    0%   {background-color: $color-grey;}
+    25%  {background-color: lighten($color-grey, 1%);}
+    50%  {background-color: lighten($color-grey, 2%);}
+    100% {background-color: $color-white;}
+}
+
 .pre-loader-logo {
     position: absolute;
     width: 150px;

@@ -26,6 +26,14 @@ $(document).ready(function() {
       .set(".pre-loader-logo-wrap", { className: "-=active" })
       .set(".pre-loader", { className: "-=is-loading" })
       .set(".pre-loader-logo .svg", { className: "-=active" })
+
+        tl.add(
+            TweenMax.from($('.hero > *, .section-intro > *'), 0.5, {
+                autoAlpha: 0,
+                y: 0,
+                ease: Power0.easeOut
+            })
+        );
   });
 
 function slideInHeroItems() {
@@ -83,8 +91,8 @@ function slideUpFooter() {
 $(function() {
     // If home page
     if ($(".home").length > 0) {
-        slideInHeroItems();
-        slideUpIntroItems();
+        //slideInHeroItems();
+        //slideUpIntroItems();
         staggerInServices();
         slideUpFooter();
     }
