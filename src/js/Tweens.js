@@ -19,7 +19,7 @@ $(document).ready(function() {
     tl.set(".pre-loader-logo .svg", { className: "+=active" })
       .to(
         ".is-loading",
-        0.6,
+        0.8,
         { ease: Power0.easeNone }
       )
       //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
