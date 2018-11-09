@@ -14,20 +14,24 @@ var heroItems = $('.hero > *');
 var introItems = $('.section-intro > *');
 
 $(document).ready(function() {
+    tl.set(".pre-loader-logo-wrap", { className: "+=active" })
     tl.set(".pre-loader", { className: "+=is-loading" })
+    tl.set(".pre-loader-logo .svg", { className: "+=active" })
       .to(
         ".is-loading",
         0.6,
         { ease: Power0.easeNone }
       )
       //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
-      .set(".pre-loader", { className: "-=is-loading" });
+      .set(".pre-loader-logo-wrap", { className: "-=active" })
+      .set(".pre-loader", { className: "-=is-loading" })
+      .set(".pre-loader-logo .svg", { className: "-=active" })
   });
 
 function slideInHeroItems() {
     heroItems.each(function() {
         tl.add(
-            TweenMax.from($(this), 0.25, {
+            TweenMax.from($(this), 0.4, {
                 autoAlpha: 0,
                 y: -5,
                 ease: Power0.easeOut
@@ -39,7 +43,7 @@ function slideInHeroItems() {
 function slideUpIntroItems() {
     introItems.each(function() {
         tl.add(
-            TweenMax.from($(this), 0.25, {
+            TweenMax.from($(this), 0.4, {
                 autoAlpha: 0,
                 y: -5,
                 ease: Power0.easeOut
@@ -58,7 +62,7 @@ function staggerInServices() {
         .setTween(tl1)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl1.staggerFrom(".service__item", 0.25, { y: -5, autoAlpha: 0, ease: Power1.easeOut }, 0.25);
+    return tl1.staggerFrom(".service__item", 0.4, { y: -5, autoAlpha: 0, ease: Power1.easeOut }, 0.25);
 }
 
 function slideUpFooter() {
@@ -71,7 +75,7 @@ function slideUpFooter() {
         .setTween(tl2)
         //.addIndicators() //debug only
         .addTo(controller);
-    return tl2.from(".btn-contact", 0.25, { y: 0, autoAlpha: 0, ease: Power0.easeOut }, 0.25);
+    return tl2.from(".btn-contact", 0.4, { y: 0, autoAlpha: 0, ease: Power0.easeOut }, 0.25);
 }
 
 
