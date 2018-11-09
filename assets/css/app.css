@@ -1284,6 +1284,21 @@ p {
       padding-top: 7.5rem;
       padding-bottom: 7.5rem; } }
 
+.pre-loader {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 0;
+  height: 12px;
+  overflow: hidden;
+  z-index: 1;
+  background: transparent; }
+  .pre-loader.is-loading {
+    position: absolute;
+    overflow: hidden;
+    background: #303030;
+    z-index: 1; }
+
 /*********************************************************
     Form
 *********************************************************/

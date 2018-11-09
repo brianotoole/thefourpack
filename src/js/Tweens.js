@@ -13,6 +13,18 @@ var controller = new ScrollMagic.Controller();
 var heroItems = $('.hero > *');
 var introItems = $('.section-intro > *');
 
+$(document).ready(function() {
+    tl.set(".pre-loader", { className: "+=is-loading" })
+      .fromTo(
+        ".is-loading",
+        0.3,
+        { width: "0%" },
+        { width: "100%", ease: Power0.easeNone }
+      )
+      //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
+      .set(".pre-loader", { className: "-=is-loading" });
+  });
+
 function slideInHeroItems() {
     heroItems.each(function() {
         tl.add(
