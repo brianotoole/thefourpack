@@ -19,7 +19,7 @@ $(document).ready(function() {
         ".is-loading",
         0.3,
         { width: "0%" },
-        { width: "100%", ease: Power0.easeNone }
+        { width: "98.5555%", ease: Power0.easeNone }
       )
       //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
       .set(".pre-loader", { className: "-=is-loading" });
