@@ -4,6 +4,24 @@
 
 .site-wrapper {
     border: 12px solid $color-primary;
+    overflow: hidden;
+}
+
+.pre-loader {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 0;
+    height: 12px;
+    overflow: hidden;
+    z-index: 1;
+    background: transparent;
+    &.is-loading {
+      position: absolute;
+      overflow: hidden;
+      background: $color-body;
+      z-index: 1;
+    }
 }
 
 .wrapper {
@@ -58,20 +76,3 @@
         padding-bottom: rem(120);
     }
 }
-
-.pre-loader {
-    position: absolute;
-    top: 0;
-    left: 12px;
-    width: 0;
-    height: 12px;
-    overflow: hidden;
-    z-index: 1;
-    background: transparent;
-    &.is-loading {
-      position: absolute;
-      overflow: hidden;
-      background: $color-body;
-      z-index: 1;
-    }
-  }
